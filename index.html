@@ -197,7 +197,7 @@
         <label for="heroina">🔑 Héroina → 2k | 2.3k </label>
         <input type="number" id="lockpick" max="999" placeholder="Qtd" />
       </div>
-
+      
       <div class="button-container">
         <button onclick="calcular()">Calcular</button>
         <button onclick="resetar()" class="reset-btn">↺</button>
@@ -223,10 +223,10 @@
         // Preços de parceria e padrão para cada item
         const precos = {
           parceria: {
-            heroina: 30000,
+            heroina: 2000,
           },
           padrao: {
-            henoina: 40000,
+            henoina: 2300,
           },
         };
 
@@ -238,7 +238,7 @@
 
         // Calcular o total com base na escolha de preços (valor visível)
         let total = 0;
-        total += heroinaQtd * precos[escolha].lockpick;
+        total += heroinaQtd * precos[escolha].heroina;
 
         // Calcular o valor da parceria para o repasse e lucro
         let valorParceria = 0;
