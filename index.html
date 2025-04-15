@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>BahamasCalc</title>
+    <title>Tropa do Urso Calc</title>
     <style>
       /* Reset de margin e padding */
       * {
@@ -160,26 +160,26 @@
         <label for="empresas-parceria"></label>
         <select id="empresas-parceria">
           <option value="Consultar">Consultar Parceria</option>
-          <option value="agiotas">Agiotas</option>
-          <option value="anonymous">Anonymous</option>
-          <option value="bevelirius">Beverly Hills</option>
-          <option value="croacia">Croacia</option>
           <option value="diamond">Diamond</option>
-          <option value="Elite">Elite</option>
+          <option value="ghost">Ghost</option>
+          <option value="tropado7">Tropa do 7</option>
+          <option value="quatrom">4M</option>
+          <option value="has">Has</option>
+          <option value="irmaosmetralha">Irmãos Metralha</option>
+          <option value="reddragon">RedDragon</option>
+          <option value="colombia">Colombia</option>
           <option value="escocia">Escocia</option>
-          <option value="ghost">Ghosts</option>
-          <option value="grota">Grota</option>
-          <option value="laranjas">Laranjas</option>
-          <option value="lacoste">Lacoste</option>
-          <option value="mecfluxo">Mecânica Fluxo</option>
-          <option value="mecnoway">Mecânica Noway</option>
-          <option value="mecredline">Mecânica Redline</option>
-          <option value="penha">Penha</option>
-          <option value="suica">Suíça</option>
-          <option value="taliba">Talibã</option>
-          <option value="topsecret">Top Secret</option>
-          <option value="turquia">Turquia</option>
+          <option value="tabila">Talibã</option>
+          <option value="tropadogelo">Tropa do Gelo</option>
+          <option value="crips">Crips</option>
+          <option value="medelin">Medelin</option>
+          <option value="mexico">México</option>
+          <option value="yakusa">Yakusa</option>
+          <option value="tpmaguinatas">Tropa dos maguinatas</option>
           <option value="vidarasa">Vida Rasa</option>
+          <option value="fluxocustons">Fluxo Custons</option>
+          <option value="noway">Noway</option>
+          <option value="oi">--</option>
         </select>
       </div>
 
@@ -198,47 +198,6 @@
         <input type="number" id="lockpick" max="999" placeholder="Qtd" />
       </div>
 
-      <div class="item">
-        <label for="masterpick">🗝️ Masterpick → 70k | 80k</label>
-        <input type="number" id="masterpick" max="999" placeholder="Qtd" />
-      </div>
-
-      <div class="item">
-        <label for="placa">🎰 Placa → 30k | 40k</label>
-        <input type="number" id="placa" max="999" placeholder="Qtd" />
-      </div>
-
-      <div class="item">
-        <label for="relogio">🧨 Explosivo C4 → 10k | 25k</label>
-        <input type="number" id="relogio" max="999" placeholder="Qtd" />
-      </div>
-
-      <div class="item">
-        <label for="algemas">🔗 Algemas → 40k | 50k</label>
-        <input type="number" id="algemas" max="999" placeholder="Qtd" />
-      </div>
-
-      <div class="item">
-        <label for="corda">➰ Corda → 20k | 30k</label>
-        <input type="number" id="corda" max="999" placeholder="Qtd" />
-      </div>
-
-      <div class="item">
-        <label for="mascara">👤 Máscara → 10k | 12k</label>
-        <input type="number" id="mascara" max="999" placeholder="Qtd" />
-      </div>
-
-      <div class="item">
-        <label for="rastreador">🛰️ Rastreador → 90k | 100k</label>
-        <input type="number" id="rastreador" max="999" placeholder="Qtd" />
-      </div>
-
-      <div class="item">
-        <label for="capuz">⚫️ Capuz → 20k | 30k</label>
-        <input type="number" id="capuz" max="999" placeholder="Qtd" />
-      </div>
-
-
       <div class="button-container">
         <button onclick="calcular()">Calcular</button>
         <button onclick="resetar()" class="reset-btn">↺</button>
@@ -251,9 +210,9 @@
 
       <div class="footer">
         <p class="cred">
-          feito por Professor
-          <a href="https://www.instagram.com/gus.dev" target="_blank"
-            >@gus.dev</a
+          Correções feitas por
+          <a href="" target="_blank"
+            >THnew</a
           >
         </p>
       </div>
@@ -265,25 +224,9 @@
         const precos = {
           parceria: {
             lockpick: 30000,
-            placa: 30000,
-            relogio: 10000,
-            masterpick: 70000,
-            algemas: 40000,
-            corda: 20000,
-            mascara: 10000,
-            rastreador: 90000,
-            capuz: 20000,
           },
           padrao: {
             lockpick: 40000,
-            placa: 40000,
-            relogio: 25000,
-            masterpick: 80000,
-            algemas: 50000,
-            corda: 30000,
-            mascara: 12000,
-            rastreador: 100000,
-            capuz: 30000,
           },
         };
 
@@ -292,45 +235,18 @@
 
         // Pegar a quantidade de cada item
         const lockpickQtd = document.getElementById("lockpick").value || 0;
-        const placaQtd = document.getElementById("placa").value || 0;
-        const relogioQtd = document.getElementById("relogio").value || 0;
-        const masterpickQtd = document.getElementById("masterpick").value || 0;
-        const algemasQtd = document.getElementById("algemas").value || 0;
-        const cordaQtd = document.getElementById("corda").value || 0;
-        const mascaraQtd = document.getElementById("mascara").value || 0;
-        const rastreadorQtd = document.getElementById("rastreador").value || 0;
-        const capuzQtd = document.getElementById("capuz").value || 0;
-        const keycardQtd = document.getElementById("keycard").value || 0;
 
         // Calcular o total com base na escolha de preços (valor visível)
         let total = 0;
         total += lockpickQtd * precos[escolha].lockpick;
-        total += placaQtd * precos[escolha].placa;
-        total += relogioQtd * precos[escolha].relogio;
-        total += masterpickQtd * precos[escolha].masterpick;
-        total += algemasQtd * precos[escolha].algemas;
-        total += cordaQtd * precos[escolha].corda;
-        total += mascaraQtd * precos[escolha].mascara;
-        total += rastreadorQtd * precos[escolha].rastreador;
-        total += capuzQtd * precos[escolha].capuz;
-        total += keycardQtd * precos[escolha].keycard;
 
         // Calcular o valor da parceria para o repasse e lucro
         let valorParceria = 0;
         valorParceria += lockpickQtd * precos["parceria"].lockpick;
-        valorParceria += placaQtd * precos["parceria"].placa;
-        valorParceria += relogioQtd * precos["parceria"].relogio;
-        valorParceria += masterpickQtd * precos["parceria"].masterpick;
-        valorParceria += algemasQtd * precos["parceria"].algemas;
-        valorParceria += cordaQtd * precos["parceria"].corda;
-        valorParceria += mascaraQtd * precos["parceria"].mascara;
-        valorParceria += rastreadorQtd * precos["parceria"].rastreador;
-        valorParceria += capuzQtd * precos["parceria"].capuz;
-        valorParceria += keycardQtd * precos["parceria"].keycard;
 
-        // Calcular lucro (30%) e valor a repassar ao gerente (70%) com base na parceria
-        const lucro = valorParceria * 0.3;
-        const enviarGerente = valorParceria * 0.7;
+        // Calcular lucro (25%) e valor a repassar ao gerente (75%) com base na parceria
+        const lucro = total * 0.25;
+        const enviarGerente = total * 0.75;
 
         // Atualizar os resultados na página
         document.getElementById(
@@ -353,15 +269,6 @@
       function resetar() {
         // Limpar os campos de quantidade
         document.getElementById("lockpick").value = "";
-        document.getElementById("placa").value = "";
-        document.getElementById("relogio").value = "";
-        document.getElementById("masterpick").value = "";
-        document.getElementById("algemas").value = "";
-        document.getElementById("corda").value = "";
-        document.getElementById("mascara").value = "";
-        document.getElementById("rastreador").value = "";
-        document.getElementById("capuz").value = "";
-        document.getElementById("keycard").value = "";
 
         // Limpar os resultados na tela
         document.getElementById("valorTotal").innerText = "Total 0,00";
