@@ -194,7 +194,7 @@
 
       <!-- Itens para cálculo -->
       <div class="item">
-        <label for="lockpick">🔑 Lockpick → 30k | 40k </label>
+        <label for="lockpick">💉 Heroina → 2k | 2.3k </label>
         <input type="number" id="lockpick" max="999" placeholder="Qtd" />
       </div>
 
@@ -223,10 +223,10 @@
         // Preços de parceria e padrão para cada item
         const precos = {
           parceria: {
-            lockpick: 30000,
+            lockpick: 2000,
           },
           padrao: {
-            lockpick: 40000,
+            lockpick: 2300,
           },
         };
 
@@ -245,8 +245,8 @@
         valorParceria += lockpickQtd * precos["parceria"].lockpick;
 
         // Calcular lucro (25%) e valor a repassar ao gerente (75%) com base na parceria
-        const lucro = total * 0.25;
-        const enviarGerente = total * 0.75;
+        const lucro = total * 0.3;
+        const enviarGerente = total * 0.7;
 
         // Atualizar os resultados na página
         document.getElementById(
